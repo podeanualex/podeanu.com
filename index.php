@@ -54,8 +54,7 @@
           <div class="arrow bounce"></div>
         </div> <!-- /.introducer -->
       </div> <!-- .row -->
-    </div> <!-- .container-fluid -->
-    <div class="container">
+         
       <section>
          <div class="row">
            <article class="project">
@@ -122,10 +121,7 @@
             </div>
         </div>
       </section>
-  </div> <!-- .container-->
-  
-  
-  
+  </div>
   <section>
     
   </section> 
