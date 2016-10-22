@@ -8,7 +8,7 @@
  *
  * ==================== */
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800';
-#home header #mainMenu ul:after, .project a.link:after {
+#home header #mainMenu ul:after, .project a.link:after, #social:after {
   content: "";
   display: table;
   clear: both;
@@ -675,6 +675,62 @@ section h2 {
   text-align: center;
   font: 200 1.7em "Open Sans", sans-serif;
   color: #222222;
+}
+
+#social {
+  bottom: 4%;
+}
+#social li {
+  display: inline-block;
+  float: none;
+  margin: 5px;
+}
+#social li:first-child {
+  display: block;
+}
+#social li:first-child a {
+  text-align: center;
+  padding: 0 1%;
+  text-decoration: none;
+  margin-bottom: 2%;
+  font: 200 1.4em "Open Sans", sans-serif;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#social li:first-child a:hover {
+  box-shadow: inset 40rem 0 0 #fff, 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+#social li:hover a {
+  text-decoration: none;
+  color: #42cca2;
+}
+#social li a {
+  font-size: 2em;
+}
+#social li a i.fa {
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#social li:hover a i.fa {
+  color: #42cca2;
+}
+
+footer {
+  margin: 4% 0 2% 0;
+  clear: both;
+}
+footer .copyright {
+  padding: 0 !important;
+  font: 200 0.8em "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /*

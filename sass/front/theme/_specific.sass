@@ -153,4 +153,43 @@ section
   h3
     text-align: center
     @include sans(200, 1.7em, $blackMain)
+      
+#social
+  @extend %clearfix
+  bottom: 4%
+  li
+    display: inline-block
+    float: none
+    margin: 5px
+    &:first-child
+      display: block
+      a
+        text-align: center
+        padding: 0 1%
+        text-decoration: none
+        margin-bottom: 2%
+        @include sans(200, 1.4em, #fff)
+        @include transition(all, .2s, ease-in-out)
+        &:hover
+          box-shadow: inset 40rem 0 0 #fff, 2px 4px 10px rgba(0,0,0, .1)
+    &:hover
+      a
+        text-decoration: none
+        color: $secondColor
+    a
+      font-size: 2em
+      i.fa  
+        color: #fff
+        @include transition(all, .2s, ease-in-out)
+    &:hover
+      a
+        i.fa
+          color: $secondColor    
+      
+footer
+  margin: 4% 0 2% 0
+  clear: both
+  .copyright
+    padding: 0!important
+    @include sans(200, .8em, rgba(255,255,255, .6))
           

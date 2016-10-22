@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/front.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="js/bootstrap.js" type="text/javascript"></script>
  
@@ -117,21 +118,69 @@
             </div>
         </div>
       </section>
-  </div> <!-- .container-->
-  
-  
-  
-  <section>
+    
+        <section>
     
   </section> 
   
   <footer>
      <div class="row">
-        <div class="copyright">
-           <p>Copyright &copy; 2016</p>
+        <div class="col-md-12 col-ms-12 no-padding">
+            <ul id="social">
+               <li>
+                   <a href="mailto:hi@podeanu-alexandru.com">
+                        hi@podeanu-alexandru.com
+                   </a>
+               </li>
+               <li>
+                   <a href="https://github.com/podeanualex" target="_blank">
+                       <i class="fa fa-github" aria-hidden="true"></i>
+                   </a>
+               </li>
+               <li>
+                  <a href="https://dribbble.com/mrallex" target="_blank">
+                       <i class="fa fa-dribbble" aria-hidden="true"></i>
+                   </a>  
+               </li>
+               <li>
+                   <a href="http://codepen.io/podeanualexandru/" target="_blank">
+                       <i class="fa fa-codepen" aria-hidden="true"></i>
+                   </a> 
+               </li>
+                <li>
+                    <a href="https://www.facebook.com/podeanualexandru" target="_blank">
+                       <i class="fa fa-facebook" aria-hidden="true"></i>
+                   </a>
+               </li>
+                <li>
+                    <a href="https://twitter.com/AlexPodeanu" target="_blank">
+                       <i class="fa fa-twitter" aria-hidden="true"></i>
+                   </a>
+               </li>
+                <li>
+                    <a href="https://plus.google.com/b/105162951958317458531/105162951958317458531" target="_blank">
+                       <i class="fa fa-google-plus" aria-hidden="true"></i>
+                   </a> 
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/podeanualexandru" target="_blank">
+                       <i class="fa fa-linkedin" aria-hidden="true"></i>
+                   </a> 
+                </li>
+           </ul>
         </div>
+        <div class="col-md-12 col-sm-12 copyright">
+           <p>Copyright &copy; 2016 Podeanu Alexandru. All Rights Reserved.</p>
+        </div>
+        
      </div>
-  </footer>
+  </footer>  
+      
+  </div> <!-- .container-->
+  
+  
+  
+
      
 </body>
 </html>
