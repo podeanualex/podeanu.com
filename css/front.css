@@ -8,7 +8,7 @@
  *
  * ==================== */
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800';
-#home header #mainMenu ul:after, .project a.link:after, #social:after {
+#home header:after, #home header #mainMenu ul:after, .project a.link:after, #social:after {
   content: "";
   display: table;
   clear: both;
@@ -482,28 +482,29 @@ body {
   z-index: 3;
 }
 #home header #logo {
-  display: block;
   position: relative;
-  margin: 0 0 0 10%;
+  float: left;
+  margin: 0 0 0 0;
 }
 #home header #logo a {
   text-decoration: none;
-  color: #222222;
 }
 #home header #logo a h1 {
-  font-weight: 200;
-  font-size: 1.3em;
+  font-weight: 600;
+  font-size: 1.6em;
+  color: #fff;
   margin: 0;
+  animation: logo 2s linear 0.2s infinite;
 }
 #home header #mainMenu {
   float: right;
-  width: 400px;
+  margin: 0 0 0 0;
+  width: 345px;
 }
 #home header #mainMenu ul li {
   margin: 0 2%;
   float: left;
   border-radius: 5px;
-  padding: 1% 2%;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -513,6 +514,7 @@ body {
 }
 #home header #mainMenu ul li a {
   display: block;
+  padding: 4px 6px;
   font: 400 14px "Open Sans", sans-serif;
   color: #fff;
   -webkit-transition: all 0.2s ease-in-out;
@@ -614,7 +616,7 @@ section h2 {
 .project:hover {
   background: #fff;
   z-index: 2;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10rem 0 0 #fff, -10rem 0 0 #fff, 2px 4px 10px rgba(0, 0, 0, 0.1);
 }
 .project:hover .content h3 a {
   color: #185a9d;
@@ -669,6 +671,10 @@ section h2 {
   box-shadow: inset 0 15rem 0 #185a9d;
   color: #fff;
 }
+.project .image img {
+  display: block;
+  margin: 0 auto;
+}
 
 .miniSection {
   padding: 2% 0;
@@ -694,7 +700,7 @@ section h2 {
 }
 #social li:first-child a {
   text-align: center;
-  padding: 0 1%;
+  padding: 0 1% 0 0;
   text-decoration: none;
   margin-bottom: 2%;
   font: 200 1.4em "Open Sans", sans-serif;
@@ -706,7 +712,8 @@ section h2 {
   transition: all 0.2s ease-in-out;
 }
 #social li:first-child a:hover {
-  box-shadow: inset 40rem 0 0 #fff, 2px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 40rem 0 0 #fff inset, 2px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0 1% 0 1%;
 }
 #social li:hover a {
   text-decoration: none;
@@ -725,6 +732,7 @@ section h2 {
 }
 #social li:hover a i.fa {
   color: #42cca2;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
