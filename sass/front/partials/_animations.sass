@@ -1,0 +1,225 @@
+.typed-cursor
+    opacity: 1
+    -webkit-animation: blink 0.7s infinite
+    -moz-animation: blink 0.7s infinite
+    animation: blink 0.7s infinite
+
+@keyframes blink
+    0%
+        opacity: 1
+    50%
+        opacity: 0
+    100%
+        opacity: 1
+
+
+@-webkit-keyframes blink
+    0%
+        opacity: 1
+    50%
+        opacity: 0
+    100%
+        opacity: 1
+
+@-moz-keyframes blink
+    0%
+        opacity: 1
+
+    50%
+        opacity: 0
+
+    100%
+        opacity: 1
+
+    
+@-webkit-keyframes fadeIn
+    from
+        opacity: 0
+    to
+        opacity: 1
+
+
+@-moz-keyframes fadeIn
+    from
+        opacity: 0
+    to
+        opacity: 1
+
+
+@keyframes fadeIn
+    from
+        opacity: 0
+    to
+        opacity: 1
+
+
+.fade-in
+    opacity: 0
+    -webkit-animation: fadeIn ease-in 1
+    -moz-animation: fadeIn ease-in 1
+    animation: fadeIn ease-in 1
+    -webkit-animation-fill-mode: forwards
+    -moz-animation-fill-mode: forwards
+    animation-fill-mode: forwards
+    -webkit-animation-duration: 1s
+    -moz-animation-duration: 1s
+    animation-duration: 1s
+    &.one
+        -webkit-animation-delay: 0.7s
+        -moz-animation-delay: 0.7s
+        animation-delay: 0.7s
+    &.two
+        -webkit-animation-delay: 1.2s
+        -moz-animation-delay: 1.2s
+        animation-delay: 1.2s
+    &.three
+        -webkit-animation-delay: 1.6s
+        -moz-animation-delay: 1.6s
+        animation-delay: 1.6s
+        
+/*Colorize Logo Animation 
+.changeOrange
+    -webkit-animation: fadeIn 1s ease-in 1, changeColorAnimationOrange 1s ease-in 3s 1
+    -moz-animation: fadeIn 1s ease-in 1, changeColorAnimationOrange 1s ease-in 3s 1
+    -ms-animation: fadeIn 1s ease-in 1, changeColorAnimationOrange 1s ease-in 3s 1
+    animation: fadeIn 1s ease-in 1, changeColorAnimationOrange 1s ease-in 3s 1
+    -webkit-animation-fill-mode: forwards
+    -moz-animation-fill-mode: forwards
+    animation-fill-mode: forwards
+    -webkit-animation-duration: 1s, 1s
+    -moz-animation-duration: 1s, 1s
+    animation-duration: 1s, 1s
+.changeBlue
+    -webkit-animation: fadeIn 1s ease-in 1, changeColorAnimationBlue 1s ease-in 3s 1
+    -moz-animation: fadeIn 1s ease-in 1, changeColorAnimationBlue 1s ease-in 3s 1
+    -ms-animation: fadeIn 1s ease-in 1, changeColorAnimationBlue 1s ease-in 3s 1
+    animation: fadeIn 1s ease-in 1, changeColorAnimationBlue 1s ease-in 3s 1
+    -webkit-animation-fill-mode: forwards
+    -moz-animation-fill-mode: forwards
+    animation-fill-mode: forwards
+    -webkit-animation-duration: 1s, 1s
+    -moz-animation-duration: 1s, 1s
+    animation-duration: 1s, 1s
+    
+@-webkit-keyframes changeColorAnimationOrange
+    0%
+        -webkit-fill: #fff
+    10%
+        -webkit-fill: #fff
+    90%
+        -webkit-fill: #f05424
+    100%
+        -webkit-fill: #f05424
+
+    
+@-moz-keyframes changeColorAnimationOrange
+    0%
+        -moz-fill: #fff
+    10%
+        -moz-fill: #fff
+    90%
+        -moz-fill: #f05424
+    100%
+        -moz-fill: #f05424
+
+    
+@keyframes changeColorAnimationOrange
+    0%
+        fill: #fff
+    10%
+        fill: #fff
+    90%
+        fill: #f05424
+    100%
+        fill: #f05424
+
+    
+@-webkit-keyframes changeColorAnimationBlue
+    0%
+        -webkit-fill: #fff
+    10%
+        -webkit-fill: #fff
+    90%
+        fill: #3bc3df
+    100%
+        -webkit-fill: #3bc3df
+
+    
+@-moz-keyframes changeColorAnimationBlue
+    0%
+        -moz-fill: #fff
+    10%
+        -moz-fill: #fff
+    90%
+        fill: #3bc3df
+    100%
+        -moz-fill: #3bc3df
+
+    
+@keyframes changeColorAnimationBlue
+    0%
+        fill: #fff
+    10%
+        fill: #fff
+    90%
+        fill: #3bc3df
+    100%
+        fill: #3bc3df
+
+
+/*Colorize Logo Animation*/
+
+
+@-moz-keyframes bounce
+    0%, 20%, 50%, 80%, 100%
+        -moz-transform: translateY(0)
+        transform: translateY(0)
+
+    40%
+        -moz-transform: translateY(-30px)
+        transform: translateY(-30px)
+
+    60%
+        -moz-transform: translateY(-15px)
+        transform: translateY(-15px)
+
+
+@-webkit-keyframes bounce
+    0%, 20%, 50%, 80%, 100%
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+
+    40%
+        -webkit-transform: translateY(-30px)
+        transform: translateY(-30px)
+
+    60%
+        -webkit-transform: translateY(-15px)
+        transform: translateY(-15px)
+
+
+@keyframes bounce
+    0%, 20%, 50%, 80%, 100%
+        -moz-transform: translateY(0)
+        -ms-transform: translateY(0)
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+
+    40%
+        -moz-transform: translateY(-30px)
+        -ms-transform: translateY(-30px)
+        -webkit-transform: translateY(-30px)
+        transform: translateY(-30px)
+
+    60%
+        -moz-transform: translateY(-15px)
+        -ms-transform: translateY(-15px)
+        -webkit-transform: translateY(-15px)
+        transform: translateY(-15px)
+  
+
+.bounce
+    -moz-animation: bounce 2s infinite
+    -webkit-animation: bounce 2s infinite
+    animation: bounce 2s infinite
+    
