@@ -502,6 +502,8 @@ body {
 #home header #mainMenu ul li {
   margin: 0 2%;
   float: left;
+  border-radius: 5px;
+  padding: 1% 2%;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -519,10 +521,12 @@ body {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  padding: 1%;
+}
+#home header #mainMenu ul li:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 #home header #mainMenu ul li:hover a {
-  color: #185a9d;
+  color: #222222;
 }
 #home .introducer {
   height: 100%;

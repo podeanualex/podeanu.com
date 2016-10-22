@@ -32,6 +32,8 @@ body
         li
           margin: 0 2%
           float: left
+          border-radius: 5px
+          padding: 1% 2%
           @include transition(all, .2s, ease-in-out)
           position: relative
           a
@@ -39,10 +41,10 @@ body
             @include sans(400, 14px, #fff)
             @include transition(all, .2s, ease-in-out)
             text-decoration: none
-            padding: 1%
           &:hover
+            background: rgba(255,255,255, .5)
             a  
-              color: $orangeMain
+              color: $blackMain
   .introducer
     height: 100%
     min-height: 300px
