@@ -23,7 +23,7 @@
   </script>
 </head>
 <body id="home">
- <div class="container-fluid">
+ <div class="container">
      <div class="row">
 
         <div class="introducer"> 
@@ -44,17 +44,13 @@
                </ul>
             </div> <!-- /.mainMenu -->
            </header> 
-          <div class="darkness"></div>
           <div class="content homeDescription">
               <h2>Hi! I'm <span id="hiim"></span></h2>
               <p>My name is <b>Alexandru-Nicolae Podeanu</b> and I am a freelance <b>Front-end Developer and Web Designer</b> living in Southampton, United Kingdom, originally from Targoviste, Romania.</p>
-
-               <p>My web career began in 2008 when I successfully built my first project which became my springboard in this journey. Since then, I have been working, improving my skills and making connections which contributed to enlarging my vision. </p>
           </div> <!-- /.text-content --> 
-          <div class="arrow bounce"></div>
         </div> <!-- /.introducer -->
       </div> <!-- .row -->
-         
+
       <section>
          <div class="row">
            <article class="project">
@@ -121,7 +117,10 @@
             </div>
         </div>
       </section>
-  </div>
+  </div> <!-- .container-->
+  
+  
+  
   <section>
     
   </section> 

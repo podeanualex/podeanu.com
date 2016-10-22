@@ -29,9 +29,9 @@ jQuery(document).ready(function($){
             height: jQuery(window).height()
         });
       
-        jQuery('.introducer').css({
-            height: jQuery(window).height()
-        });
+//        jQuery('.introducer').css({
+//            height: jQuery(window).height()
+//        });
       
     }
   

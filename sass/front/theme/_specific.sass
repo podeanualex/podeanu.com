@@ -1,15 +1,17 @@
 body
   color: #fff
   font-size: 15px
+  background: #43cea2
+  background: -webkit-linear-gradient(to left, #43cea2 , #185a9d)
+  background: linear-gradient(to left, #43cea2 , #185a9d)
+
 #home
   header
     background: transparent
     padding: 1% 0
     width: 100%
     min-height: 50px
-    position: fixed
-    top: 0
-    left: 0
+    position: relative
     z-index: 3
     #logo
       display: block
@@ -43,26 +45,22 @@ body
               color: $orangeMain
   .introducer
     height: 100%
-    min-height: 800px
-    padding-top: 20%
-    background: url('../img/indexBg-min.jpeg') no-repeat center center fixed 
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    -o-background-size: cover
-    background-size: cover
+    min-height: 300px
+    padding-top: 2%
     position: relative
     .content
       z-index: 3
       position: relative
-      text-align: center
-      width: 60%
+      width: 100%
       display: block
+      margin-bottom: 3%
       margin: 5% auto 2% auto
     p
       @include sans($light, 1.2em, #fff)
       text-align: justify-content
+      width: 70%
       b
-        @include sans(400, 1.1em, #fff)
+        @include sans(600, 1.1em, #fff)
     .darkness
       width: 100%
       height: 100%
@@ -73,12 +71,13 @@ body
       background: rgba(0,0,0,.8)
       @include transition(all, .2s, ease-in-out)
     h1
-      @include sans(200, 2.3em, #fff)
+      @include sans(200, 2.3em, $blackMain)
     h2
-      @include sans(100, 2.3em, #fff)
-      margin-bottom: 4%
+      @include sans(100, 2.3em, $blackMain)
+      margin-bottom: 2%
       span
-        color: $orangeMain
+        color: #fff
+        text-shadow: 2px 1px 3px rgba(0,0,0,.1)
         font-weight: 600
         
 section
@@ -95,6 +94,7 @@ section
   overflow: hidden
   min-height: 264px
   position: relative
+  z-index: 1
   @include transition(all, .2s, ease-in-out)
   &:nth-child(1)
     background: #f0f0f0
@@ -104,6 +104,8 @@ section
     background: #e5e6e5
   &:hover
     background: #fff
+    z-index: 2
+    box-shadow: 2px 4px 10px rgba(0,0,0, .1)
     .content
       h3
         a
