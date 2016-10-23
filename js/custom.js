@@ -44,6 +44,18 @@ jQuery(document).ready(function($){
 });
 
 
+jQuery(document).ready(function(){
+                                 
+ jQuery('.miniSection').mouseenter(function(){
+     jQuery('.miniSection a').removeClass('bounce');
+ });
+    
+   jQuery('.miniSection').mouseleave(function(){
+     jQuery('.miniSection a').addClass('bounce');
+ });
+ 
+});
+
 
 
 

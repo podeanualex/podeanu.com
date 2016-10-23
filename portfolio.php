@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/front.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="fonts/mfizz/font-mfizz.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="js/bootstrap.js" type="text/javascript"></script>
  
@@ -45,83 +46,34 @@
                </ul>
             </div> <!-- /.mainMenu -->
            </header> 
-          <div class="content homeDescription">
-              <h2>Hi! I'm <span id="hiim"></span></h2>
-              <p>My name is <b>Alexandru-Nicolae Podeanu</b> and I am a freelance <b>Front-end Developer and Web Designer</b> living in Southampton, United Kingdom, originally from Targoviste, Romania.</p>
-          </div> <!-- /.text-content --> 
         </div> <!-- /.introducer -->
       </div> <!-- .row -->
 
       <section>
          <div class="row">
-           <article class="project">
-                <div class="content col-md-7 col-sm-12">
-                     <h3>
-                        <a href="#">Soccer Schools UK</a>
-                     </h3>
-                     <p>
-                          This project was made for the biggest clinique in London. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                    <ul class="list">
-                            <li>UI and UX design</li>
-                            <li>Website design</li>
-                            <li>App development</li>
-                    </ul>
-                    <a href="project.php" class="link"> View project </a>
-                </div>
-            <div class="image col-md-5 col-sm-12">
-              <img class="img-responsive" src="img/code-proje.png" alt="">
-            </div>
-           </article>
-           
-            
-           <article class="project">
-                           <div class="image col-md-5 col-sm-12">
-              <img class="img-responsive" src="img/code-proje.png" alt="">
-            </div>
-                <div class="content col-md-7 col-sm-12">
-                     <h3>
-                        <a href="#">Soccer Schools UK</a>
-                     </h3>
-                     <p>
-                          This project was made for the biggest clinique in London. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                       <a href="project.php" class="link"> View project </a>
-                </div>
+           <article class="project-full">
+                <div class="content col-md-12 col-sm-12 no-padding">
+                     <h2>
+                        Soccer Schools UK
+                     </h2>
+                     <ul class="skillsList">
+                              <li> <i class="icon-html"></i> HTML</li>
+                              <li> <i class="icon-css"></i> CSS</li>
+                              <li> <i class="icon-javascript"></i> JavaScript</li>
+                              <li> <i class="icon-javascript"></i> jQuery</li>
 
-           </article>
-           
-           
-            <article class="project">
-                <div class="content col-md-7 col-sm-12">
-                     <h3>
-                        <a href="#">Soccer Schools UK</a>
-                     </h3>
+                     </ul> <!-- /.skills -->
                      <p>
                           This project was made for the biggest clinique in London. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
-                    <ul class="list">
-                            <li>UI and UX design</li>
-                            <li>Website design</li>
-                            <li>App development</li>
-                    </ul>
                     <a href="project.php" class="link"> View project </a>
                 </div>
-            <div class="image col-md-5 col-sm-12">
+            <div class="image col-md-12 col-sm-12">
               <img class="img-responsive" src="img/code-proje.png" alt="">
             </div>
            </article>
-         </div> <!-- end .ROW -->
-        <div class="row">
-            <div class="miniSection col-md-12 col-ms-12 triggerCall">
-                <a href="contact.php" class="calltoaction">More Projects</a>
-            </div>
-        </div>
+          </div> <!-- .row -->
       </section>
-    
-        <section>
-    
-  </section> 
   
   <footer>
      <div class="row">

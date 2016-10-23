@@ -44,84 +44,54 @@
                    <li><a href="index.php"> Contact </a></li>
                </ul>
             </div> <!-- /.mainMenu -->
-           </header> 
-          <div class="content homeDescription">
-              <h2>Hi! I'm <span id="hiim"></span></h2>
-              <p>My name is <b>Alexandru-Nicolae Podeanu</b> and I am a freelance <b>Front-end Developer and Web Designer</b> living in Southampton, United Kingdom, originally from Targoviste, Romania.</p>
-          </div> <!-- /.text-content --> 
+           </header>  
         </div> <!-- /.introducer -->
       </div> <!-- .row -->
-
-      <section>
-         <div class="row">
-           <article class="project">
-                <div class="content col-md-7 col-sm-12">
-                     <h3>
-                        <a href="#">Soccer Schools UK</a>
-                     </h3>
-                     <p>
-                          This project was made for the biggest clinique in London. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      
+      <div class="row">
+      <section class="content-area">
+                <div class="text-content col-md-12 col-sm-12">
+                
+                    <h1>About me</h1>
+                     
+                    <div id="avatar">
+                        <img src="img/avatar.png" class="img-responsive" alt="Podeanu Alexandru Profile Picture">
+                    </div>  <!-- /#avatar -->
+          
+                    <p>My name is <b>Alexandru-Nicolae Podeanu</b> and I am a freelance <b>Web Developer and Designer</b> currently living in <b>Southampton</b>, United Kingdom, but originally from Targoviste, Romania. </p> 
+          
+       
+                    <p> My web career began back in 2008 when, out of curiosity, I built a website that presented a pension, project that was to be my first assignment in IT.
                     </p>
-                    <ul class="list">
-                            <li>UI and UX design</li>
-                            <li>Website design</li>
-                            <li>App development</li>
-                    </ul>
-                    <a href="project.php" class="link"> View project </a>
-                </div>
-            <div class="image col-md-5 col-sm-12">
-              <img class="img-responsive" src="img/code-proje.png" alt="">
-            </div>
-           </article>
-           
+          
             
-           <article class="project">
-                           <div class="image col-md-5 col-sm-12">
-              <img class="img-responsive" src="img/code-proje.png" alt="">
-            </div>
-                <div class="content col-md-7 col-sm-12">
-                     <h3>
-                        <a href="#">Soccer Schools UK</a>
-                     </h3>
-                     <p>
-                          This project was made for the biggest clinique in London. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                       <a href="project.php" class="link"> View project </a>
-                </div>
+  
+                    <p class="skills">For 8 years now, I’ve been working, improving my skills and making contact with a lot of people who are now my clients. I am delighted to say that now I learnt most of:
+                      <span>HTML5</span>
+                      <span>CSS3 (LESS,SASS/SCSS)</span>
+                      <span>PHP</span>
+                      <span>jQuery</span>
+                      <span>mySQL</span>
+                      <span>Wordpress Development</span>
+                      <span>Adobe Photoshop</span>
+                      <span>Adobe Illustrator</span>
+                      <span>SEO</span>
+                      <span>Adobe Indesign</span>
+                      <span>Logo Design &amp; Branding</span>
+                      <span>Responsive Design</span>
+                  </p>
+              </div>
+           
+            <div class="clear"></div>
 
-           </article>
-           
-           
-            <article class="project">
-                <div class="content col-md-7 col-sm-12">
-                     <h3>
-                        <a href="#">Soccer Schools UK</a>
-                     </h3>
-                     <p>
-                          This project was made for the biggest clinique in London. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                    <ul class="list">
-                            <li>UI and UX design</li>
-                            <li>Website design</li>
-                            <li>App development</li>
-                    </ul>
-                    <a href="project.php" class="link"> View project </a>
-                </div>
-            <div class="image col-md-5 col-sm-12">
-              <img class="img-responsive" src="img/code-proje.png" alt="">
-            </div>
-           </article>
-         </div> <!-- end .ROW -->
-        <div class="row">
             <div class="miniSection col-md-12 col-ms-12 triggerCall">
-                <a href="contact.php" class="calltoaction">More Projects</a>
+                <h3>I'm interested in new projects!</h3>
+                <a href="contact.php" class="bounce calltoaction">Let's talk</a>
             </div>
-        </div>
+
       </section>
-    
-        <section>
-    
-  </section> 
+ </div> <!-- end .ROW -->
+
   
   <footer>
      <div class="row">

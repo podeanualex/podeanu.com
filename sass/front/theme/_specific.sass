@@ -1,13 +1,12 @@
 body
   color: #fff
-  font-size: 15px
+  font-size: 16px
   background: #43cea2
   background: -webkit-linear-gradient(to left, #43cea2 , #185a9d)
   background: linear-gradient(to left, #43cea2 , #185a9d)
-
+  border-top: 4px solid rgba(255,255,255,.2)
 #home
   header
-    background: transparent
     padding: 1% 0
     width: 100%
     min-height: 50px
@@ -50,8 +49,7 @@ body
               color: $blackMain
   .introducer
     height: 100%
-    min-height: 300px
-    padding-top: 2%
+    padding: 2% 0
     position: relative
     .content
       z-index: 3
@@ -153,13 +151,89 @@ section
     img
       display: block
       margin: 0 auto
-.miniSection
-  padding: 2% 0
+      
+.project-full
+  padding: 3% 7% 6% 7%
+  overflow: hidden
+  position: relative
+  background: #fff
+  @include transition(all, .2s, ease-in-out)
+  &:hover
+  .content
+  ul
+    display: block
+    &.list
+      margin-left: 3%
+    li
+      list-style: initial
+      color: #333
+  h2
+    @include sans($semibold, 2em, #333)
+    @include transition(all, .2s, ease-in-out)
+    margin-bottom: 0
+    padding-bottom: 0
+    padding: 0
+    text-transform: initial
+    display: block
+    @include transition(all, .2s, ease-in-out)
+    text-align: left
+    position: relative
+  p
+    margin-bottom: 2%
+    width: 60%
+    text-align: justify
+    @include sans(200, 1em, $blackMain)
+  a.link
+    padding: .4em .8em
+    @include sans(200, 1em, $orangeMain)
+    border-radius: 2px
+    border: 1px solid $orangeMain
+    margin: 2% 2% 0 0
+    text-decoration: none
+    float: left
+    @extend %clearfix
+    @include transition(all, .2s, ease-in-out)
+    &:hover
+      box-shadow: inset 0 15rem 0 $orangeMain
+      color: #fff
+  .image
+    img
+      display: block
+      margin: 0 auto        
+      
+.skillsList
+  margin: 0 0 4% 0
   display: block
+  @extend %clearfix
+  li
+    height: 43px
+    line-height: 43px
+    margin: 0 1%
+    display: inline-block
+    position: relative
+    margin-bottom: 1%
+    &:first-child
+      margin-left: 0
+      padding-left: 0
+    @include transition(all, .2s, ease-in-out)
+    i
+      color: $secondColor
+      font-size: 1.7em
+      vertical-align: middle
+      @include transition(all, .2s, ease-in-out)
+      &:hover
+        i
+          color: $blueMain      
+      
+.miniSection
+  margin-top: 1%
+  padding: 2% 0 2% 0
+  display: block
+  border-top: 1px solid rgba(255,255,255, .3)
   position: relative
   h3
     text-align: center
-    @include sans(200, 1.7em, $blackMain)
+    @include sans(200, 1.7em, #fff)
       
 #social
   @extend %clearfix
@@ -194,6 +268,69 @@ section
         i.fa
           color: $secondColor
           text-shadow: 2px 4px 10px rgba(0,0,0, .1)
+        
+        
+.content-area
+  padding: 5% 0 5% 0
+  @extend %clearfix
+  .text-content
+    display: block
+    position: relative
+    z-index: 3
+    margin: 0 auto
+    padding: 0 16%
+    h1
+      @include sans(700, 2.3em, $blackMain)
+      text-align: center
+      margin-bottom: 5%
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        top: 110%
+        left: 50%
+        width: 20px
+        border: 2px solid rgba(255,255,255,.3)
+        border-radius: 4px
+        box-shadow: inset 0 1px 1px rgba(0,0,0, .5)
+        transform: translateX(-50%)
+    h2
+      @include sans(100, 2.3em, $blackMain)
+      margin: 2% auto
+      text-align: center
+      span
+        color: $orangeMain
+        font-weight: 400
+    p
+      @include sans($light, 1.2em, #fff)
+      margin-bottom: 30px
+      text-align: justify
+      &.skills
+        text-align: initial
+        span
+          padding: 4px 6px
+          background: $blackMain
+          color: #fff
+          margin: 0 3px 3px 0
+          display: inline-block
+          border-radius: 10px
+          font-size: .7em
+          @include transition(all, .2s, ease-in-out)
+          &:hover
+            background: $orangeMain
+            transform: scale(1.3)
+        b
+          @include sans($semibold, 16px, $blackMain) 
+          
+          
+#avatar
+  width: 206px
+  height: 206px
+  margin: 2% auto 5% auto
+  img
+    border-radius: 50%
+    border: 5px solid rgba(255,255,255,.3)
+        
       
 footer
   margin: 4% 0 2% 0

@@ -8,7 +8,7 @@
  *
  * ==================== */
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800';
-#home header:after, #home header #mainMenu ul:after, .project a.link:after, #social:after {
+#home header:after, #home header #mainMenu ul:after, .project a.link:after, .project-full a.link:after, .skillsList:after, #social:after, .content-area:after {
   content: "";
   display: table;
   clear: both;
@@ -156,10 +156,11 @@ a {
   display: table;
   padding: 1% 3%;
   border-radius: 2px;
+  box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.1);
   text-align: center;
   text-transform: uppercase;
   font: 200 1.1em "Open Sans", sans-serif;
-  color: #fff;
+  color: #222222;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -467,14 +468,14 @@ body {
 
 body {
   color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   background: #43cea2;
   background: -webkit-linear-gradient(to left, #43cea2, #185a9d);
   background: linear-gradient(to left, #43cea2, #185a9d);
+  border-top: 4px solid rgba(255, 255, 255, 0.2);
 }
 
 #home header {
-  background: transparent;
   padding: 1% 0;
   width: 100%;
   min-height: 50px;
@@ -532,8 +533,7 @@ body {
 }
 #home .introducer {
   height: 100%;
-  min-height: 300px;
-  padding-top: 2%;
+  padding: 2% 0;
   position: relative;
 }
 #home .introducer .content {
@@ -676,15 +676,125 @@ section h2 {
   margin: 0 auto;
 }
 
-.miniSection {
-  padding: 2% 0;
+.project-full {
+  padding: 3% 7% 6% 7%;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.project-full ul {
   display: block;
+}
+.project-full ul.list {
+  margin-left: 3%;
+}
+.project-full ul li {
+  list-style: initial;
+  color: #333;
+}
+.project-full h2 {
+  font: 600 2em "Open Sans", sans-serif;
+  color: #333;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding: 0;
+  text-transform: initial;
+  display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-align: left;
+  position: relative;
+}
+.project-full p {
+  margin-bottom: 2%;
+  width: 60%;
+  text-align: justify;
+  font: 200 1em "Open Sans", sans-serif;
+  color: #222222;
+}
+.project-full a.link {
+  padding: 0.4em 0.8em;
+  font: 200 1em "Open Sans", sans-serif;
+  color: #185a9d;
+  border-radius: 2px;
+  border: 1px solid #185a9d;
+  margin: 2% 2% 0 0;
+  text-decoration: none;
+  float: left;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.project-full a.link:hover {
+  box-shadow: inset 0 15rem 0 #185a9d;
+  color: #fff;
+}
+.project-full .image img {
+  display: block;
+  margin: 0 auto;
+}
+
+.skillsList {
+  margin: 0 0 4% 0;
+  display: block;
+}
+.skillsList li {
+  height: 43px;
+  line-height: 43px;
+  margin: 0 1%;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.skillsList li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+.skillsList li i {
+  color: #42cca2;
+  font-size: 1.7em;
+  vertical-align: middle;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.skillsList li i:hover i {
+  color: #3bc3df;
+}
+
+.miniSection {
+  margin-top: 1%;
+  padding: 2% 0 2% 0;
+  display: block;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
 }
 .miniSection h3 {
   text-align: center;
   font: 200 1.7em "Open Sans", sans-serif;
-  color: #222222;
+  color: #fff;
 }
 
 #social {
@@ -733,6 +843,86 @@ section h2 {
 #social li:hover a i.fa {
   color: #42cca2;
   text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-area {
+  padding: 5% 0 5% 0;
+}
+.content-area .text-content {
+  display: block;
+  position: relative;
+  z-index: 3;
+  margin: 0 auto;
+  padding: 0 16%;
+}
+.content-area .text-content h1 {
+  font: 700 2.3em "Open Sans", sans-serif;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 5%;
+  position: relative;
+}
+.content-area .text-content h1:after {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  width: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  transform: translateX(-50%);
+}
+.content-area .text-content h2 {
+  font: 100 2.3em "Open Sans", sans-serif;
+  color: #222222;
+  margin: 2% auto;
+  text-align: center;
+}
+.content-area .text-content h2 span {
+  color: #185a9d;
+  font-weight: 400;
+}
+.content-area .text-content p {
+  font: 200 1.2em "Open Sans", sans-serif;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.content-area .text-content p.skills {
+  text-align: initial;
+}
+.content-area .text-content p.skills span {
+  padding: 4px 6px;
+  background: #222222;
+  color: #fff;
+  margin: 0 3px 3px 0;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 0.7em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.content-area .text-content p.skills span:hover {
+  background: #185a9d;
+  transform: scale(1.3);
+}
+.content-area .text-content p.skills b {
+  font: 600 16px "Open Sans", sans-serif;
+  color: #222222;
+}
+
+#avatar {
+  width: 206px;
+  height: 206px;
+  margin: 2% auto 5% auto;
+}
+#avatar img {
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.3);
 }
 
 footer {
