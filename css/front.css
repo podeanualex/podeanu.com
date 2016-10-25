@@ -8,7 +8,7 @@
  *
  * ==================== */
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800';
-#home header:after, #home header #mainMenu ul:after, .project a.link:after, .project-full a.link:after, .skillsList:after, #social:after, .content-area:after {
+#home header:after, #home header #mainMenu ul:after, .project a.link:after, .project-full a.link:after, .project-full .buttons a:after, #social:after, .content-area:after {
   content: "";
   display: table;
   clear: both;
@@ -652,7 +652,7 @@ section h2 {
   font: 200 0.8em "Open Sans", sans-serif;
   color: #222222;
 }
-.project a.link {
+.project a.link, .project .project-full .buttons a, .project-full .buttons .project a {
   padding: 0.4em 0.8em;
   font: 200 1em "Open Sans", sans-serif;
   color: #185a9d;
@@ -667,7 +667,7 @@ section h2 {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.project a.link:hover {
+.project a.link:hover, .project .project-full .buttons a:hover, .project-full .buttons .project a:hover {
   box-shadow: inset 0 15rem 0 #185a9d;
   color: #fff;
 }
@@ -687,9 +687,6 @@ section h2 {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.project-full ul {
-  display: block;
-}
 .project-full ul.list {
   margin-left: 3%;
 }
@@ -698,7 +695,7 @@ section h2 {
   color: #333;
 }
 .project-full h2 {
-  font: 600 2em "Open Sans", sans-serif;
+  font: 700 2em "Open Sans", sans-serif;
   color: #333;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -719,13 +716,15 @@ section h2 {
   position: relative;
 }
 .project-full p {
-  margin-bottom: 2%;
-  width: 60%;
+  margin: 0 0 4% 0;
   text-align: justify;
-  font: 200 1em "Open Sans", sans-serif;
-  color: #222222;
+  width: 80%;
+  font: 400 1em "Open Sans", sans-serif;
+  color: #333;
+  line-height: 150%;
+  position: relative;
 }
-.project-full a.link {
+.project-full a.link, .project-full .buttons a {
   padding: 0.4em 0.8em;
   font: 200 1em "Open Sans", sans-serif;
   color: #185a9d;
@@ -734,29 +733,63 @@ section h2 {
   margin: 2% 2% 0 0;
   text-decoration: none;
   float: left;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-.project-full a.link:hover {
+.project-full a.link:hover, .project-full .buttons a:hover {
   box-shadow: inset 0 15rem 0 #185a9d;
   color: #fff;
+}
+.project-full .buttons {
+  display: block;
+}
+.project-full .buttons a {
+  width: 70%;
+  font-size: 0.9em;
+}
+.project-full .buttons a:first-child {
+  margin-top: 0;
+}
+.project-full .buttons a i {
+  margin-right: 5px;
 }
 .project-full .image img {
   display: block;
   margin: 0 auto;
 }
 
+.reachBottom {
+  margin-top: 6%;
+}
+.reachBottom h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+.reachBottom h2:after {
+  content: "";
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  width: 100%;
+  border: 1px solid #f9f9f9;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  transform: translateX(-50%);
+}
+
 .skillsList {
-  margin: 0 0 4% 0;
-  display: block;
+  margin: 0 0 2% 0;
 }
 .skillsList li {
   height: 43px;
+  font: 200 0.9em "Open Sans", sans-serif;
+  color: #333;
   line-height: 43px;
-  margin: 0 1%;
+  padding: 0 2%;
   display: inline-block;
   position: relative;
   margin-bottom: 1%;
@@ -771,7 +804,7 @@ section h2 {
   padding-left: 0;
 }
 .skillsList li i {
-  color: #42cca2;
+  color: #222222;
   font-size: 1.7em;
   vertical-align: middle;
   -webkit-transition: all 0.2s ease-in-out;
@@ -784,11 +817,22 @@ section h2 {
   color: #3bc3df;
 }
 
+.imgFull img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.showCase {
+  padding: 0 0;
+  overflow: hidden;
+}
+
 .miniSection {
   margin-top: 1%;
   padding: 2% 0 2% 0;
   display: block;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
 }
 .miniSection h3 {
@@ -913,6 +957,56 @@ section h2 {
 .content-area .text-content p.skills b {
   font: 600 16px "Open Sans", sans-serif;
   color: #222222;
+}
+
+.miniNav {
+  text-align: center;
+  height: 200px;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.miniNav:hover {
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1), inset 1px 1px #f9f9f9, inset -1px -1px #f9f9f9;
+}
+.miniNav a:hover i.fa {
+  margin-left: -5%;
+  opacity: 1;
+}
+.miniNav a.link, .miniNav .project-full .buttons a, .project-full .buttons .miniNav a {
+  display: table;
+  margin: 0 auto;
+  float: none !important;
+  font-size: 0.8em;
+  width: 30%;
+  background: #fff;
+}
+.miniNav h3 {
+  text-align: center;
+  font-size: 1em;
+  color: #222222;
+  font-weight: 600;
+  position: relative;
+}
+.miniNav h3 a {
+  color: #185a9d;
+}
+.miniNav h3 a i.fa {
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+.miniNav p {
+  text-align: center;
+  width: auto;
+  font-size: 0.8em;
 }
 
 #avatar {
@@ -1085,7 +1179,7 @@ footer .copyright {
     padding: 5% 0;
     min-height: auto !important;
   }
-  #projects .lastProject_home .details .link {
+  #projects .lastProject_home .details .link, #projects .lastProject_home .details .project-full .buttons a, .project-full .buttons #projects .lastProject_home .details a {
     font-weight: 700 !important;
   }
 

@@ -76,7 +76,7 @@
            
             
            <article class="project">
-                           <div class="image col-md-5 col-sm-12">
+            <div class="image col-md-5 col-sm-12">
               <img class="img-responsive" src="img/code-proje.png" alt="">
             </div>
                 <div class="content col-md-7 col-sm-12">

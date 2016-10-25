@@ -161,14 +161,13 @@ section
   &:hover
   .content
   ul
-    display: block
     &.list
       margin-left: 3%
     li
       list-style: initial
       color: #333
   h2
-    @include sans($semibold, 2em, #333)
+    @include sans(700, 2em, #333)
     @include transition(all, .2s, ease-in-out)
     margin-bottom: 0
     padding-bottom: 0
@@ -179,10 +178,12 @@ section
     text-align: left
     position: relative
   p
-    margin-bottom: 2%
-    width: 60%
+    margin: 0 0 4% 0
     text-align: justify
-    @include sans(200, 1em, $blackMain)
+    width: 80%
+    @include sans(400, 1em, #333)
+    line-height: 150%
+    position: relative
   a.link
     padding: .4em .8em
     @include sans(200, 1em, $orangeMain)
@@ -192,23 +193,52 @@ section
     text-decoration: none
     float: left
     @extend %clearfix
-    @include transition(all, .2s, ease-in-out)
+    @include transition(all, .4s, ease-in-out)
     &:hover
       box-shadow: inset 0 15rem 0 $orangeMain
       color: #fff
+  .buttons
+    display: block
+    a
+      @extend .link
+      width: 70%
+      font-size: .9em
+      &:first-child
+        margin-top: 0
+      i
+        margin-right: 5px
+      &:hover
+        i
+          
   .image
     img
       display: block
-      margin: 0 auto        
+      margin: 0 auto
+      
+.reachBottom
+  margin-top: 6%
+  h2
+    text-align: center
+    font-size: 1.5em
+    margin-bottom: 30px
+    &:after
+      content: ''
+      position: absolute
+      top: 150%
+      left: 50%
+      width: 100%
+      border: 1px solid #f9f9f9
+      border-radius: 4px
+      box-shadow: inset 0 1px 1px rgba(0,0,0, .5)
+      transform: translateX(-50%)
       
 .skillsList
-  margin: 0 0 4% 0
-  display: block
-  @extend %clearfix
+  margin: 0 0 2% 0
   li
     height: 43px
+    @include sans(200, .9em, #333)
     line-height: 43px
-    margin: 0 1%
+    padding: 0 2%
     display: inline-block
     position: relative
     margin-bottom: 1%
@@ -217,19 +247,30 @@ section
       padding-left: 0
     @include transition(all, .2s, ease-in-out)
     i
-      color: $secondColor
+      color: $blackMain
       font-size: 1.7em
       vertical-align: middle
       @include transition(all, .2s, ease-in-out)
       &:hover
         i
-          color: $blueMain      
+          color: $blueMain     
+        
+.imgFull
+  img
+    width: 100%
+    height: auto
+    display: block
+    
+    
+.showCase
+  padding: 0 0
+  overflow: hidden
       
 .miniSection
   margin-top: 1%
   padding: 2% 0 2% 0
   display: block
-  border-top: 1px solid rgba(255,255,255, .3)
+  border-top: 1px solid rgba(255,255,255, .1)
   position: relative
   h3
     text-align: center
@@ -323,6 +364,42 @@ section
           @include sans($semibold, 16px, $blackMain) 
           
           
+.miniNav
+  text-align: center
+  height: 200px
+  position: relative
+  @include transition(all, .2s, ease-in-out)
+  &:hover
+    box-shadow: 2px 4px 10px rgba(0,0,0, .1), inset 1px 1px #f9f9f9,inset -1px -1px #f9f9f9
+  a
+    &:hover
+      i.fa
+        margin-left: -5%
+        opacity: 1
+  a.link
+    display: table
+    margin: 0 auto
+    float: none!important
+    font-size: .8em
+    width: 30%
+    background: #fff
+  h3
+    text-align: center
+    font-size: 1em
+    color: $blackMain
+    font-weight: 600
+    position: relative
+    a
+      color: $orangeMain
+      i.fa
+        position: absolute
+        @include transition(all, .2s, ease-in-out)
+        opacity: 0
+  p
+    text-align: center
+    width: auto
+    font-size: .8em
+            
 #avatar
   width: 206px
   height: 206px

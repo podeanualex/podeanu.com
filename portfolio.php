@@ -63,14 +63,61 @@
                               <li> <i class="icon-javascript"></i> jQuery</li>
 
                      </ul> <!-- /.skills -->
+                     <div class="clear"></div>
                      <p>
                           This project was made for the biggest clinique in London. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          This project was made for the biggest clinique in London. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                          This project was made for the biggest clinique in London. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     </p>
-                    <a href="project.php" class="link"> View project </a>
                 </div>
-            <div class="image col-md-12 col-sm-12">
-              <img class="img-responsive" src="img/code-proje.png" alt="">
+                
+             <div class="row">
+             <div class="col-ms-12 col-md-6 showCase">
+                 <div class="imgFull">
+                    <img class="lazy"data-original="img/front/portfolio/proj2.png">
+                        <img src="img/portfolio/proj2.png">
+                 </div>
+             </div>
+             <div class="col-ms-12 col-md-6 showCase">
+                 <div class="imgFull">
+                    <img class="lazy" data-original="img/front/portfolio/proj3.png">
+                        <img src="img/portfolio/proj3.png">
+                 </div>
+             </div>
+             
+             <div class="col-ms-12 col-md-12 showCase">
+                 <div class="imgFull">
+                    <img src="img/portfolio/proj1-big.png" alt="">
+                 </div>
+             </div>
+         </div>    
+                
+         <div class="row reachBottom">
+            <div class="col-md-6 col-sm-12 buttons">
+               <a href="project.php" class="link" target="_blank"> <i class="icon-google-developers"></i> View source </a>
+               <a href="project.php" class="link" target="_blank"> <i class="fa fa-external-link"></i> Website </a>
+               <a href="project.php" class="link" target="_blank"> <i class="fa  fa-behance"></i> More designs </a>
+               <a href="project.php" class="link" target="_blank"> <i class="fa fa-dribbble"></i> More designs </a>
+               <a href="project.php" class="link" target="_blank"> <i class="fa fa-smile-o"></i> Recommend it </a>
             </div>
+         </div>
+           <div class="row reachBottom">
+            <h2>Other projects</h2>
+            <div class="col-md-6 col-sm-4 miniNav">
+               <h3><a href="#"> <i class="fa fa-chevron-circle-right"></i> Fires Little Helper</a> </h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, deleniti veritatis, fuga iste ducimus alias hic tenetur iure esse itaque ipsa sit? Assumenda natus veritatis molestias mollitia quas dolor recusandae!</p>
+               <a href="#" class="link">More details</a>
+            </div>
+            <div class="col-md-6 col-sm-5 miniNav">
+               <h3><a href="#"><i class="fa fa-chevron-circle-right"></i> Fires Little Helper</a> </h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, deleniti veritatis, fuga iste ducimus alias hic tenetur iure esse itaque ipsa sit? Assumenda natus veritatis molestias mollitia quas dolor recusandae!</p>
+               
+               <a href="#" class="link">More details</a>
+            </div>
+         </div>
+            
+                        
+
            </article>
           </div> <!-- .row -->
       </section>
@@ -131,8 +178,6 @@
   </div> <!-- .container-->
   
   
-  
 
-     
 </body>
 </html>
